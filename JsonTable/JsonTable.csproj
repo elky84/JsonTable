@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+
+    <PackageId>JsonTable</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>elky</Authors>
+	<Company>elky</Company>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+
+	<PackageDescription>Easily usable with Json Table</PackageDescription>
+	<RepositoryUrl>https://github.com/elky84/JsonTable</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
