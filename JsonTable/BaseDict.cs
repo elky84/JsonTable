@@ -37,7 +37,7 @@ namespace JsonTable
         {
             var property = typeof(T).GetProperties().FirstOrDefault(x => x.Name == "Id");
 
-            var deserialized = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText(Path));
+            var deserialized = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText($"{Path}/{typeof(T).Name}.json"));
             if(deserialized != null)
             {
                 _dictionary = deserialized.ToDictionary(x => ((K?)property!.GetValue(x))!, x => x);

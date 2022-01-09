@@ -20,6 +20,8 @@ Use Newtonsoft.json.
 
 ## Version History
 
-### v1.0.1
+### v1.0.3
+Tables now only require a folder path. (The full path is not required.) 
 
+### v1.0.1
 removed nullable property on container (BaseDict and BaseList).

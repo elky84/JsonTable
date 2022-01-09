@@ -26,7 +26,7 @@ namespace JsonTable
 
         protected override void Load()
         {
-            var list = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText(Path));
+            var list = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText($"{Path}/{typeof(T).Name}.json"));
             if( list != null)
             {
                 _values = list;
