@@ -5,7 +5,7 @@ namespace JsonTable
 {
     public class BaseList<T> : BaseTable, IReadOnlyList<T> where T : class
     {
-        private List<T?>? _values = new();
+        private List<T?> _values = new();
 
         public T? this[int index]
         {
@@ -26,7 +26,11 @@ namespace JsonTable
 
         protected override void Load()
         {
-            _values = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText(Path));
+            var list = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText(Path));
+            if( list != null)
+            {
+                _values = list;
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator() => _values!.GetEnumerator();

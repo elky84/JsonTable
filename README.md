@@ -17,3 +17,9 @@
 Easily usable Json to Table (dictionary and mores).
 
 Use Newtonsoft.json.
+
+## Version History
+
+### v1.0.1
+
+removed nullable property on container (BaseDict and BaseList).
