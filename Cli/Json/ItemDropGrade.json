@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "일반",
+    "Grade": "일반",
+    "Probability": 80,
+    "OptionMin": 0,
+    "OptionMax": 0,
+    "MinOptionGrade": "일반"
+  },
+  {
+    "Id": "고급",
+    "Grade": "고급",
+    "Probability": 12,
+    "OptionMin": 1,
+    "OptionMax": 2,
+    "MinOptionGrade": "일반"
+  },
+  {
+    "Id": "희귀",
+    "Grade": "희귀",
+    "Probability": 4,
+    "OptionMin": 2,
+    "OptionMax": 6,
+    "MinOptionGrade": "일반"
+  },
+  {
+    "Id": "서사",
+    "Grade": "서사",
+    "Probability": 2.5,
+    "OptionMin": 4,
+    "OptionMax": 6,
+    "MinOptionGrade": "고급"
+  },
+  {
+    "Id": "전설",
+    "Grade": "전설",
+    "Probability": 1.3,
+    "OptionMin": 6,
+    "OptionMax": 6,
+    "MinOptionGrade": "전설"
+  },
+  {
+    "Id": "신화",
+    "Grade": "신화",
+    "Probability": 0.2,
+    "OptionMin": 10,
+    "OptionMax": 10,
+    "MinOptionGrade": "전설"
+  }
+]

@@ -65,6 +65,10 @@ MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
     }
     ```
 
+## Reference
+
+[Cli](https://github.com/elky84/JsonTable/Cli/Program.cs)
+
 ## Version History
 
 ### v1.0.6

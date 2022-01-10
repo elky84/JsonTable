@@ -1,0 +1,1442 @@
+[
+  {
+    "Id": 1,
+    "Grade": "일반",
+    "Option": "화염저항",
+    "ValueMin": 1,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 2,
+    "Grade": "고급",
+    "Option": "화염저항",
+    "ValueMin": 2,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 3,
+    "Grade": "희귀",
+    "Option": "화염저항",
+    "ValueMin": 3,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 4,
+    "Grade": "서사",
+    "Option": "화염저항",
+    "ValueMin": 4,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 5,
+    "Grade": "전설",
+    "Option": "화염저항",
+    "ValueMin": 5,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 6,
+    "Grade": "신화",
+    "Option": "화염저항",
+    "ValueMin": 6,
+    "ValueMax": 35,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 7,
+    "Grade": "일반",
+    "Option": "화염증폭",
+    "ValueMin": 1,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 8,
+    "Grade": "고급",
+    "Option": "화염증폭",
+    "ValueMin": 2,
+    "ValueMax": 6,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 9,
+    "Grade": "희귀",
+    "Option": "화염증폭",
+    "ValueMin": 3,
+    "ValueMax": 7,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 10,
+    "Grade": "서사",
+    "Option": "화염증폭",
+    "ValueMin": 4,
+    "ValueMax": 8,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 11,
+    "Grade": "전설",
+    "Option": "화염증폭",
+    "ValueMin": 5,
+    "ValueMax": 9,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 12,
+    "Grade": "신화",
+    "Option": "화염증폭",
+    "ValueMin": 6,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 13,
+    "Grade": "일반",
+    "Option": "냉기저항",
+    "ValueMin": 1,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 14,
+    "Grade": "고급",
+    "Option": "냉기저항",
+    "ValueMin": 2,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 15,
+    "Grade": "희귀",
+    "Option": "냉기저항",
+    "ValueMin": 3,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 16,
+    "Grade": "서사",
+    "Option": "냉기저항",
+    "ValueMin": 4,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 17,
+    "Grade": "전설",
+    "Option": "냉기저항",
+    "ValueMin": 5,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 18,
+    "Grade": "신화",
+    "Option": "냉기저항",
+    "ValueMin": 6,
+    "ValueMax": 35,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 19,
+    "Grade": "일반",
+    "Option": "냉기증폭",
+    "ValueMin": 1,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 20,
+    "Grade": "고급",
+    "Option": "냉기증폭",
+    "ValueMin": 2,
+    "ValueMax": 6,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 21,
+    "Grade": "희귀",
+    "Option": "냉기증폭",
+    "ValueMin": 3,
+    "ValueMax": 7,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 22,
+    "Grade": "서사",
+    "Option": "냉기증폭",
+    "ValueMin": 4,
+    "ValueMax": 8,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 23,
+    "Grade": "전설",
+    "Option": "냉기증폭",
+    "ValueMin": 5,
+    "ValueMax": 9,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 24,
+    "Grade": "신화",
+    "Option": "냉기증폭",
+    "ValueMin": 6,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 25,
+    "Grade": "일반",
+    "Option": "번개저항",
+    "ValueMin": 1,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 26,
+    "Grade": "고급",
+    "Option": "번개저항",
+    "ValueMin": 2,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 27,
+    "Grade": "희귀",
+    "Option": "번개저항",
+    "ValueMin": 3,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 28,
+    "Grade": "서사",
+    "Option": "번개저항",
+    "ValueMin": 4,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 29,
+    "Grade": "전설",
+    "Option": "번개저항",
+    "ValueMin": 5,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 30,
+    "Grade": "신화",
+    "Option": "번개저항",
+    "ValueMin": 6,
+    "ValueMax": 35,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 31,
+    "Grade": "일반",
+    "Option": "번개증폭",
+    "ValueMin": 1,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 32,
+    "Grade": "고급",
+    "Option": "번개증폭",
+    "ValueMin": 2,
+    "ValueMax": 6,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 33,
+    "Grade": "희귀",
+    "Option": "번개증폭",
+    "ValueMin": 3,
+    "ValueMax": 7,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 34,
+    "Grade": "서사",
+    "Option": "번개증폭",
+    "ValueMin": 4,
+    "ValueMax": 8,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 35,
+    "Grade": "전설",
+    "Option": "번개증폭",
+    "ValueMin": 5,
+    "ValueMax": 9,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 36,
+    "Grade": "신화",
+    "Option": "번개증폭",
+    "ValueMin": 6,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 37,
+    "Grade": "일반",
+    "Option": "독저항",
+    "ValueMin": 1,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 38,
+    "Grade": "고급",
+    "Option": "독저항",
+    "ValueMin": 2,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 39,
+    "Grade": "희귀",
+    "Option": "독저항",
+    "ValueMin": 3,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 40,
+    "Grade": "서사",
+    "Option": "독저항",
+    "ValueMin": 4,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 41,
+    "Grade": "전설",
+    "Option": "독저항",
+    "ValueMin": 5,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 42,
+    "Grade": "신화",
+    "Option": "독저항",
+    "ValueMin": 6,
+    "ValueMax": 35,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 43,
+    "Grade": "일반",
+    "Option": "독증폭",
+    "ValueMin": 1,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 44,
+    "Grade": "고급",
+    "Option": "독증폭",
+    "ValueMin": 2,
+    "ValueMax": 6,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 45,
+    "Grade": "희귀",
+    "Option": "독증폭",
+    "ValueMin": 3,
+    "ValueMax": 7,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 46,
+    "Grade": "서사",
+    "Option": "독증폭",
+    "ValueMin": 4,
+    "ValueMax": 8,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 47,
+    "Grade": "전설",
+    "Option": "독증폭",
+    "ValueMin": 5,
+    "ValueMax": 9,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 48,
+    "Grade": "신화",
+    "Option": "독증폭",
+    "ValueMin": 6,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 49,
+    "Grade": "일반",
+    "Option": "이동속도",
+    "ValueMin": 5,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 50,
+    "Grade": "고급",
+    "Option": "이동속도",
+    "ValueMin": 10,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 51,
+    "Grade": "희귀",
+    "Option": "이동속도",
+    "ValueMin": 13,
+    "ValueMax": 13,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 52,
+    "Grade": "서사",
+    "Option": "이동속도",
+    "ValueMin": 16,
+    "ValueMax": 16,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 53,
+    "Grade": "전설",
+    "Option": "이동속도",
+    "ValueMin": 20,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 54,
+    "Grade": "신화",
+    "Option": "이동속도",
+    "ValueMin": 25,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 55,
+    "Grade": "일반",
+    "Option": "시전시간",
+    "ValueMin": -5,
+    "ValueMax": -5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 56,
+    "Grade": "고급",
+    "Option": "시전시간",
+    "ValueMin": -10,
+    "ValueMax": -10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 57,
+    "Grade": "희귀",
+    "Option": "시전시간",
+    "ValueMin": -13,
+    "ValueMax": -13,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 58,
+    "Grade": "서사",
+    "Option": "시전시간",
+    "ValueMin": -16,
+    "ValueMax": -16,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 59,
+    "Grade": "전설",
+    "Option": "시전시간",
+    "ValueMin": -20,
+    "ValueMax": -20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 60,
+    "Grade": "신화",
+    "Option": "시전시간",
+    "ValueMin": -25,
+    "ValueMax": -25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 61,
+    "Grade": "일반",
+    "Option": "피격지연",
+    "ValueMin": -5,
+    "ValueMax": -5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 62,
+    "Grade": "고급",
+    "Option": "피격지연",
+    "ValueMin": -10,
+    "ValueMax": -10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 63,
+    "Grade": "희귀",
+    "Option": "피격지연",
+    "ValueMin": -13,
+    "ValueMax": -13,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 64,
+    "Grade": "서사",
+    "Option": "피격지연",
+    "ValueMin": -16,
+    "ValueMax": -16,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 65,
+    "Grade": "전설",
+    "Option": "피격지연",
+    "ValueMin": -20,
+    "ValueMax": -20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 66,
+    "Grade": "신화",
+    "Option": "피격지연",
+    "ValueMin": -25,
+    "ValueMax": -25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 67,
+    "Grade": "일반",
+    "Option": "힘",
+    "ValueMin": 1,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 68,
+    "Grade": "고급",
+    "Option": "힘",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 69,
+    "Grade": "희귀",
+    "Option": "힘",
+    "ValueMin": 5,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 70,
+    "Grade": "서사",
+    "Option": "힘",
+    "ValueMin": 5,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 71,
+    "Grade": "전설",
+    "Option": "힘",
+    "ValueMin": 10,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 72,
+    "Grade": "신화",
+    "Option": "힘",
+    "ValueMin": 15,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 73,
+    "Grade": "일반",
+    "Option": "민첩",
+    "ValueMin": 1,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 74,
+    "Grade": "고급",
+    "Option": "민첩",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 75,
+    "Grade": "희귀",
+    "Option": "민첩",
+    "ValueMin": 5,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 76,
+    "Grade": "서사",
+    "Option": "민첩",
+    "ValueMin": 5,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 77,
+    "Grade": "전설",
+    "Option": "민첩",
+    "ValueMin": 10,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 78,
+    "Grade": "신화",
+    "Option": "민첩",
+    "ValueMin": 15,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 79,
+    "Grade": "일반",
+    "Option": "체질",
+    "ValueMin": 1,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 80,
+    "Grade": "고급",
+    "Option": "체질",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 81,
+    "Grade": "희귀",
+    "Option": "체질",
+    "ValueMin": 5,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 82,
+    "Grade": "서사",
+    "Option": "체질",
+    "ValueMin": 5,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 83,
+    "Grade": "전설",
+    "Option": "체질",
+    "ValueMin": 10,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 84,
+    "Grade": "신화",
+    "Option": "체질",
+    "ValueMin": 15,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 85,
+    "Grade": "일반",
+    "Option": "지능",
+    "ValueMin": 1,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 86,
+    "Grade": "고급",
+    "Option": "지능",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 87,
+    "Grade": "희귀",
+    "Option": "지능",
+    "ValueMin": 5,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 88,
+    "Grade": "서사",
+    "Option": "지능",
+    "ValueMin": 5,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 89,
+    "Grade": "전설",
+    "Option": "지능",
+    "ValueMin": 10,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 90,
+    "Grade": "신화",
+    "Option": "지능",
+    "ValueMin": 15,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 91,
+    "Grade": "일반",
+    "Option": "통찰",
+    "ValueMin": 1,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 92,
+    "Grade": "고급",
+    "Option": "통찰",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 93,
+    "Grade": "희귀",
+    "Option": "통찰",
+    "ValueMin": 5,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 94,
+    "Grade": "서사",
+    "Option": "통찰",
+    "ValueMin": 5,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 95,
+    "Grade": "전설",
+    "Option": "통찰",
+    "ValueMin": 10,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 96,
+    "Grade": "신화",
+    "Option": "통찰",
+    "ValueMin": 15,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 97,
+    "Grade": "일반",
+    "Option": "결의",
+    "ValueMin": 1,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 98,
+    "Grade": "고급",
+    "Option": "결의",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 99,
+    "Grade": "희귀",
+    "Option": "결의",
+    "ValueMin": 5,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 100,
+    "Grade": "서사",
+    "Option": "결의",
+    "ValueMin": 5,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 101,
+    "Grade": "전설",
+    "Option": "결의",
+    "ValueMin": 10,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 102,
+    "Grade": "신화",
+    "Option": "결의",
+    "ValueMin": 15,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 103,
+    "Grade": "일반",
+    "Option": "공격속도",
+    "ValueMin": 5,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 104,
+    "Grade": "고급",
+    "Option": "공격속도",
+    "ValueMin": 10,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 105,
+    "Grade": "희귀",
+    "Option": "공격속도",
+    "ValueMin": 13,
+    "ValueMax": 13,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 106,
+    "Grade": "서사",
+    "Option": "공격속도",
+    "ValueMin": 16,
+    "ValueMax": 16,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 107,
+    "Grade": "전설",
+    "Option": "공격속도",
+    "ValueMin": 20,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 108,
+    "Grade": "신화",
+    "Option": "공격속도",
+    "ValueMin": 25,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 109,
+    "Grade": "일반",
+    "Option": "데미지",
+    "ValueMin": 1,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 110,
+    "Grade": "고급",
+    "Option": "데미지",
+    "ValueMin": 2,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 111,
+    "Grade": "희귀",
+    "Option": "데미지",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 112,
+    "Grade": "서사",
+    "Option": "데미지",
+    "ValueMin": 4,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 113,
+    "Grade": "전설",
+    "Option": "데미지",
+    "ValueMin": 5,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 114,
+    "Grade": "신화",
+    "Option": "데미지",
+    "ValueMin": 10,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 115,
+    "Grade": "일반",
+    "Option": "방어력",
+    "ValueMin": 1,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 116,
+    "Grade": "고급",
+    "Option": "방어력",
+    "ValueMin": 2,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 117,
+    "Grade": "희귀",
+    "Option": "방어력",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 118,
+    "Grade": "서사",
+    "Option": "방어력",
+    "ValueMin": 4,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 119,
+    "Grade": "전설",
+    "Option": "방어력",
+    "ValueMin": 5,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 120,
+    "Grade": "신화",
+    "Option": "방어력",
+    "ValueMin": 10,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 121,
+    "Grade": "일반",
+    "Option": "추가데미지",
+    "ValueMin": 1,
+    "ValueMax": 5,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 122,
+    "Grade": "고급",
+    "Option": "추가데미지",
+    "ValueMin": 2,
+    "ValueMax": 10,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 123,
+    "Grade": "희귀",
+    "Option": "추가데미지",
+    "ValueMin": 3,
+    "ValueMax": 15,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 124,
+    "Grade": "서사",
+    "Option": "추가데미지",
+    "ValueMin": 4,
+    "ValueMax": 20,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 125,
+    "Grade": "전설",
+    "Option": "추가데미지",
+    "ValueMin": 5,
+    "ValueMax": 25,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 126,
+    "Grade": "신화",
+    "Option": "추가데미지",
+    "ValueMin": 10,
+    "ValueMax": 30,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 127,
+    "Grade": "일반",
+    "Option": "공격등급",
+    "ValueMin": 10,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 128,
+    "Grade": "고급",
+    "Option": "공격등급",
+    "ValueMin": 20,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 129,
+    "Grade": "희귀",
+    "Option": "공격등급",
+    "ValueMin": 30,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 130,
+    "Grade": "서사",
+    "Option": "공격등급",
+    "ValueMin": 40,
+    "ValueMax": 80,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 131,
+    "Grade": "전설",
+    "Option": "공격등급",
+    "ValueMin": 50,
+    "ValueMax": 100,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 132,
+    "Grade": "신화",
+    "Option": "공격등급",
+    "ValueMin": 100,
+    "ValueMax": 200,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 133,
+    "Grade": "일반",
+    "Option": "체력",
+    "ValueMin": 10,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 134,
+    "Grade": "고급",
+    "Option": "체력",
+    "ValueMin": 20,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 135,
+    "Grade": "희귀",
+    "Option": "체력",
+    "ValueMin": 30,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 136,
+    "Grade": "서사",
+    "Option": "체력",
+    "ValueMin": 40,
+    "ValueMax": 80,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 137,
+    "Grade": "전설",
+    "Option": "체력",
+    "ValueMin": 50,
+    "ValueMax": 100,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 138,
+    "Grade": "신화",
+    "Option": "체력",
+    "ValueMin": 100,
+    "ValueMax": 200,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 139,
+    "Grade": "일반",
+    "Option": "마나",
+    "ValueMin": 10,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 140,
+    "Grade": "고급",
+    "Option": "마나",
+    "ValueMin": 20,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 141,
+    "Grade": "희귀",
+    "Option": "마나",
+    "ValueMin": 30,
+    "ValueMax": 50,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 142,
+    "Grade": "서사",
+    "Option": "마나",
+    "ValueMin": 40,
+    "ValueMax": 80,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 143,
+    "Grade": "전설",
+    "Option": "마나",
+    "ValueMin": 50,
+    "ValueMax": 100,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  },
+  {
+    "Id": 144,
+    "Grade": "신화",
+    "Option": "마나",
+    "ValueMin": 100,
+    "ValueMax": 200,
+    "Level": null,
+    "SlotLimit": [],
+    "ClassLimit": []
+  }
+]
