@@ -35,13 +35,17 @@ namespace JsonTable
 
         protected override void Load()
         {
-            var property = typeof(T).GetProperties().FirstOrDefault(x => x.Name == "Id");
-
-            var deserialized = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText($"{Path}/{typeof(T).Name}.json"));
-            if(deserialized != null)
+            var list = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText($"{Path}/{typeof(T).Name}.json"));
+            if(list != null)
             {
-                _dictionary = deserialized.ToDictionary(x => ((K?)property!.GetValue(x))!, x => x);
+                _dictionary = OnLoad(list);
             }
+        }
+
+        protected virtual Dictionary<K, T?> OnLoad(List<T?> list)
+        {
+            var property = typeof(T).GetProperties().FirstOrDefault(x => x.Name == "Id");
+            return list.ToDictionary(x => ((K?)property!.GetValue(x))!, x => x);
         }
 
         IEnumerator IEnumerable.GetEnumerator() => _dictionary.GetEnumerator();

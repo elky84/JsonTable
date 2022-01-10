@@ -29,8 +29,13 @@ namespace JsonTable
             var list = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText($"{Path}/{typeof(T).Name}.json"));
             if( list != null)
             {
-                _values = list;
+                _values = OnLoad(list);
             }
+        }
+
+        protected virtual List<T?> OnLoad(List<T?> list)
+        {
+            return list;
         }
 
         IEnumerator IEnumerable.GetEnumerator() => _values!.GetEnumerator();

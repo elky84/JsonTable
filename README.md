@@ -18,7 +18,37 @@ Easily usable Json to Table (dictionary and mores).
 
 Use Newtonsoft.json.
 
+## usage
+
+### definition
+
+```csharp
+[Table(@"json")]
+public partial class TableItem : BaseDict<string, Item>
+{
+}
+```
+
+### load
+
+```csharp
+MasterTable.Load("ItemGenerator.Table");
+```
+
+### use
+
+```csharp
+var data = MasterTable.From<TableItem>();
+```
+
+```csharp
+MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
+```
+
 ## Version History
+
+### v1.0.4
+Supports OnLoad() function to set configuration rules when container is loaded.
 
 ### v1.0.3
 Tables now only require a folder path. (The full path is not required.) 
