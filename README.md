@@ -45,7 +45,20 @@ var data = MasterTable.From<TableItem>();
 MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
 ```
 
+## Support Types
+
+* BaseList
+  * `List<T>`
+* BaseDict
+  * `Dictionary<K, T>`
+* BaseMultiDict
+  * `Dictionary<K, List<T>>`
+  * Similar C++ stl Multimap
+
 ## Version History
+
+### v1.0.5
+Features added MultiDict. (like c++ stl multimap)
 
 ### v1.0.4
 Supports OnLoad() function to set configuration rules when container is loaded.
