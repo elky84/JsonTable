@@ -44,8 +44,13 @@ namespace JsonTable
 
         protected virtual Dictionary<K, T?> OnLoad(List<T?> list)
         {
-            var property = typeof(T).GetProperties().FirstOrDefault(x => x.Name == "Id");
-            return list.ToDictionary(x => ((K?)property!.GetValue(x))!, x => x);
+            var property = typeof(T).GetProperties().FirstOrDefault(x => x.Name == Key);
+            if (null == property)
+            {
+                throw new Exception($"Not found keyProperty from T. <KeyProperty:{Key}, T:{typeof(T).Name}>");
+            }
+
+            return list.ToDictionary(x => ((K?)property.GetValue(x))!, x => x);
         }
 
         IEnumerator IEnumerable.GetEnumerator() => _dictionary.GetEnumerator();

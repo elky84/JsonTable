@@ -7,6 +7,9 @@ namespace JsonTable
         protected string Path => GetType().GetCustomAttribute<TableAttribute>()?.Path ??
             throw new Exception("cannot find TableAttribute.");
 
+        protected string Key => GetType().GetCustomAttribute<TableAttribute>()?.Key ??
+                        throw new Exception("cannot find TableAttribute.");
+
         protected BaseTable()
         {
             Load();

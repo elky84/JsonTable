@@ -54,8 +54,22 @@ MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
 * BaseMultiDict
   * `Dictionary<K, List<T>>`
   * Similar C++ stl Multimap
+    * Example
+    ```csharp
+    [Table(@"json")]
+    public partial class TableItemByType : BaseMultiDict<ItemType, Item>
+    {
+        public TableItemByType() : base("Type") // input key property name
+        {
+        }
+    }
+    ```
 
 ## Version History
+
+### v1.0.6
+
+Exception process reinforcement.
 
 ### v1.0.5
 Features added MultiDict. (like c++ stl multimap)

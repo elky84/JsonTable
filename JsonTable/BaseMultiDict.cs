@@ -15,11 +15,10 @@ namespace JsonTable
 			}
 			else
 			{
-                list = new List<T>
-                {
-                    value
-                };
-                this._dictionary[key] = list;
+				this._dictionary[key] = new List<T>
+				{
+					value
+				};
 			}
 		}
 
@@ -55,11 +54,21 @@ namespace JsonTable
 
 		protected virtual Dictionary<K, List<T>> OnLoad(List<T?> list)
 		{
-			var property = typeof(T).GetProperties().FirstOrDefault(x => x.Name == "Id");
-			foreach(var t in list)
+			var property = typeof(T).GetProperties().FirstOrDefault(x => x.Name == Key);
+			if(null == property)
             {
-				Add(((K?)property!.GetValue(t))!, t!);
+				throw new Exception($"Not found keyProperty from T. <KeyProperty:{Key}, T:{typeof(T).Name}>");
             }
+
+			foreach (var t in list)
+            {
+				var value = property.GetValue(t!);
+				var key = property.ReflectedType!.IsEnum ?
+					(K)Enum.Parse(property.ReflectedType!, (string)value!) :
+					((K?)value)!;
+
+				Add(key, t!);
+			}
 
 			return _dictionary;
 		}
