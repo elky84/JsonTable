@@ -1,9 +1,13 @@
-﻿namespace JsonTable
+﻿using System.Reflection;
+
+namespace JsonTable
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class TableAttribute : Attribute
     {
-        public string Path { get; private set; }
+        private string Path { get; set; }
+
+        public string FullPath => $"{System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly()!.Location)}/{Path}";
 
         public string Key { get; private set; } = "Id";
 

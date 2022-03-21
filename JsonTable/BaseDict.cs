@@ -35,7 +35,7 @@ namespace JsonTable
 
         protected override void Load()
         {
-            var list = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText($"{Path}/{typeof(T).Name}.json"));
+            var list = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText($"{FullPath}/{typeof(T).Name}.json"));
             if(list != null)
             {
                 _dictionary = OnLoad(list);

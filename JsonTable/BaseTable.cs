@@ -4,7 +4,7 @@ namespace JsonTable
 {
     public abstract class BaseTable
     {
-        protected string Path => GetType().GetCustomAttribute<TableAttribute>()?.Path ??
+        protected string FullPath => GetType().GetCustomAttribute<TableAttribute>()?.FullPath ??
             throw new Exception("cannot find TableAttribute.");
 
         protected string Key => GetType().GetCustomAttribute<TableAttribute>()?.Key ??

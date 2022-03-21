@@ -74,6 +74,10 @@ MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
 
 ## Version History
 
+### v1.0.7
+
+Load from Binary path. (Full Path)
+
 ### v1.0.6
 
 Exception process reinforcement.
