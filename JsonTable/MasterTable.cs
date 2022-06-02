@@ -1,10 +1,13 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 
 namespace JsonTable
 {
     public static class MasterTable
     {
-        private static Dictionary<Type, BaseTable>? _loadedTableDict = new();
+        private static Dictionary<Type, BaseTable>? _loadedTableDict = new Dictionary<Type, BaseTable>();
 
         static MasterTable()
         {

@@ -1,11 +1,13 @@
 ﻿using Newtonsoft.Json;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 
 namespace JsonTable
 {
     public class BaseList<T> : BaseTable, IReadOnlyList<T> where T : class
     {
-        private List<T> _values = new();
+        private List<T> _values = new List<T>();
 
         public T? this[int index]
         {

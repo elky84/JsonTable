@@ -74,6 +74,10 @@ MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
 
 ## Version History
 
+### v1.0.9
+
+TargetFramework to netstandard2.1
+
 ### v1.0.8
 
 Fixed Nullable rule.

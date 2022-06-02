@@ -1,11 +1,15 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace JsonTable
 {
     public class BaseDict<K, T> : BaseTable, IReadOnlyDictionary<K, T> where T : class where K : notnull
     {
-        private Dictionary<K, T> _dictionary = new();
+        private Dictionary<K, T> _dictionary = new Dictionary<K, T>();
 
         public T? this[K key]
         {
@@ -46,7 +50,7 @@ namespace JsonTable
                 throw new Exception($"Not found keyProperty from T. <KeyProperty:{Key}, T:{typeof(T).Name}>");
             }
 
-            return list.ToDictionary(x => ((K?)property.GetValue(x))!, x => x);
+            return list.ToDictionary(x => ((K)property.GetValue(x))!, x => x);
         }
 
         IEnumerator IEnumerable.GetEnumerator() => _dictionary.GetEnumerator();

@@ -1,11 +1,15 @@
 ﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace JsonTable
 {
     public class BaseMultiDict<K, T> : BaseTable
         where T : class where K : notnull
     {
-        protected Dictionary<K, List<T>> _dictionary = new();
+        protected Dictionary<K, List<T>> _dictionary = new Dictionary<K, List<T>>();
 
         public void Add(K key, T value)
         {
@@ -65,7 +69,7 @@ namespace JsonTable
                 var value = property.GetValue(t!);
                 var key = property.ReflectedType!.IsEnum ?
                     (K)Enum.Parse(property.ReflectedType!, (string)value!) :
-                    ((K?)value)!;
+                    ((K)value)!;
 
                 Add(key, t!);
             }
