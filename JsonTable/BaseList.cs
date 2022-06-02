@@ -5,7 +5,7 @@ namespace JsonTable
 {
     public class BaseList<T> : BaseTable, IReadOnlyList<T> where T : class
     {
-        private List<T?> _values = new();
+        private List<T> _values = new();
 
         public T? this[int index]
         {
@@ -26,14 +26,14 @@ namespace JsonTable
 
         protected override void Load()
         {
-            var list = JsonConvert.DeserializeObject<List<T?>>(File.ReadAllText($"{FullPath}/{typeof(T).Name}.json"));
-            if( list != null)
+            var list = JsonConvert.DeserializeObject<List<T>>(File.ReadAllText($"{FullPath}/{typeof(T).Name}.json"));
+            if (list != null)
             {
                 _values = OnLoad(list);
             }
         }
 
-        protected virtual List<T?> OnLoad(List<T?> list)
+        protected virtual List<T> OnLoad(List<T> list)
         {
             return list;
         }

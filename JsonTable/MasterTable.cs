@@ -4,7 +4,7 @@ namespace JsonTable
 {
     public static class MasterTable
     {
-        private static Dictionary<Type, BaseTable?>? _loadedTableDict = new();
+        private static Dictionary<Type, BaseTable>? _loadedTableDict = new();
 
         static MasterTable()
         {
@@ -14,7 +14,8 @@ namespace JsonTable
         {
             var assembly = string.IsNullOrEmpty(assemblyName) ?
                 Assembly.GetEntryAssembly() :
-                AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(x => {
+                AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(x =>
+                {
                     var name = x.GetName().Name;
                     return name != null && assemblyName.StartsWith(name);
                 });
@@ -24,7 +25,7 @@ namespace JsonTable
                 .ToDictionary(x => x, x =>
                 {
                     var instance = Activator.CreateInstance(x);
-                    return instance as BaseTable;
+                    return (instance as BaseTable)!;
                 });
         }
 

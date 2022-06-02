@@ -1,7 +1,6 @@
 ﻿using Cli.MasterData;
-using JsonTable;
-using EnumExtend;
 using Cli.Types;
+using JsonTable;
 
 namespace Cli.Table
 {
@@ -18,7 +17,7 @@ namespace Cli.Table
     [Table(@"json")]
     public partial class TableItemDropGrade : BaseList<ItemDropGrade>
     {
-        protected override List<ItemDropGrade?> OnLoad(List<ItemDropGrade?> list)
+        protected override List<ItemDropGrade> OnLoad(List<ItemDropGrade> list)
         {
             return list.OrderByDescending(x => (int)x!.Grade).ToList();
         }
@@ -33,11 +32,11 @@ namespace Cli.Table
     [Table(@"json", "Grade")]
     public partial class TableItemOptionByGrade : BaseMultiDict<GradeType, ItemOption>
     {
-        protected override Dictionary<GradeType, List<ItemOption>> OnLoad(List<ItemOption?> list)
+        protected override Dictionary<GradeType, List<ItemOption>> OnLoad(List<ItemOption> list)
         {
-            foreach(var itemOption in list)
+            foreach (var itemOption in list)
             {
-                foreach( var grade in Enumerable.Range((int)GradeType.Normal, (int)itemOption!.Grade + 1))
+                foreach (var grade in Enumerable.Range((int)GradeType.Normal, (int)itemOption!.Grade + 1))
                 {
                     Add((GradeType)grade, itemOption);
                 }
