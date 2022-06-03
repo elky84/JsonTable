@@ -11,6 +11,9 @@ namespace JsonTable
     {
         protected Dictionary<K, List<T>> _dictionary = new Dictionary<K, List<T>>();
 
+        public Dictionary<K, List<T>> Clone => new Dictionary<K, List<T>>(_dictionary);
+
+
         public void Add(K key, T value)
         {
             if (_dictionary.TryGetValue(key, out var list))

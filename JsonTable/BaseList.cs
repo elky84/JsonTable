@@ -24,6 +24,8 @@ namespace JsonTable
 
         public int Count => _values!.Count;
 
+        public List<T> Clone => new List<T>(_values);
+
         public IEnumerator<T> GetEnumerator() => _values!.GetEnumerator();
 
         protected override void Load()
