@@ -27,6 +27,8 @@ namespace JsonTable
 
         public Dictionary<K, T> Clone => new Dictionary<K, T>(_dictionary);
 
+        public Dictionary<K, T> Container => _dictionary;
+
         public int Count => _dictionary.Count;
 
         public bool ContainsKey(K key) => _dictionary.ContainsKey(key);

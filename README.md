@@ -74,6 +74,10 @@ MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
 
 ## Version History
 
+### v1.0.11
+
+Added Container methods (get internal container)
+
 ### v1.0.10
 
 Added Clone methods

@@ -13,6 +13,7 @@ namespace JsonTable
 
         public Dictionary<K, List<T>> Clone => new Dictionary<K, List<T>>(_dictionary);
 
+        public Dictionary<K, List<T>> Container => _dictionary;
 
         public void Add(K key, T value)
         {
