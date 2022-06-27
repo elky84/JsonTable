@@ -27,6 +27,10 @@ namespace Cli.Table
     [Table(@"json")]
     public partial class TableItemOption : BaseDict<string, ItemOption>
     {
+        protected override string Json()
+        {
+            return File.ReadAllText($"Json/ItemOption.json");
+        }
     }
 
     [Table(@"json", "Grade")]

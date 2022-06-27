@@ -17,5 +17,7 @@ namespace JsonTable
         }
 
         protected abstract void Load();
+
+        protected virtual string Json() { return string.Empty; }
     }
 }

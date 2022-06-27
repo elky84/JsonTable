@@ -33,7 +33,13 @@ namespace JsonTable
 
         protected override void Load()
         {
-            var list = JsonConvert.DeserializeObject<List<T>>(File.ReadAllText($"{FullPath}/{typeof(T).Name}.json"));
+            var json = Json();
+            if (string.IsNullOrEmpty(json))
+            {
+                json = File.ReadAllText($"{FullPath}/{typeof(T).Name}.json");
+            }
+
+            var list = JsonConvert.DeserializeObject<List<T>>(json);
             if (list != null)
             {
                 _values = OnLoad(list);

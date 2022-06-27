@@ -7,7 +7,7 @@ namespace JsonTable
 {
     public static class MasterTable
     {
-        private static Dictionary<Type, BaseTable>? _loadedTableDict = new Dictionary<Type, BaseTable>();
+        private static Dictionary<Type, BaseTable> _loadedTableDict = new Dictionary<Type, BaseTable>();
 
         static MasterTable()
         {
@@ -32,6 +32,10 @@ namespace JsonTable
                 });
         }
 
+        public static void Add<T>(BaseTable baseTable) where T : class
+        {
+            _loadedTableDict.Add(typeof(T), baseTable);
+        }
         public static T? From<T>() where T : BaseTable
         {
             if (_loadedTableDict!.TryGetValue(typeof(T), out var value) == false)
