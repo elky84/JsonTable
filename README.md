@@ -74,6 +74,10 @@ MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
 
 ## Version History
 
+### v1.0.13
+
+Remove nullable return of MasterTable and return an exception when requesting an invalid type.
+
 ### v1.0.12
 
 Added Json load optional method. (virtual interface, for Unity3D)

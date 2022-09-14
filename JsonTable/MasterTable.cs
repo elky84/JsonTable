@@ -36,12 +36,14 @@ namespace JsonTable
         {
             _loadedTableDict.Add(typeof(T), baseTable);
         }
-        public static T? From<T>() where T : BaseTable
+        public static T From<T>() where T : BaseTable
         {
             if (_loadedTableDict!.TryGetValue(typeof(T), out var value) == false)
-                return null;
+            {
+                throw new Exception($"Not Found Table. <Table:{typeof(T)}>");
+            }
 
-            return value as T;
+            return (value as T)!;
         }
     }
 }
