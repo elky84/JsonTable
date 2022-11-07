@@ -7,10 +7,16 @@ namespace JsonTable
 {
     public static class MasterTable
     {
-        private static Dictionary<Type, BaseTable> _loadedTableDict = new Dictionary<Type, BaseTable>();
+        private static Dictionary<Type, BaseTable> LoadedTableDict = new Dictionary<Type, BaseTable>();
 
         static MasterTable()
         {
+        }
+
+        public static Dictionary<K, V> Merge<K, V>(IEnumerable<Dictionary<K, V>> dictionaries)
+        {
+            return dictionaries.SelectMany(x => x)
+                            .ToDictionary(x => x.Key, y => y.Value);
         }
 
         public static void Load(string assemblyName)
@@ -23,22 +29,21 @@ namespace JsonTable
                     return name != null && assemblyName.StartsWith(name);
                 });
 
-            _loadedTableDict = assembly!.GetTypes()
-                .Where(x => x.IsSubclassOf(typeof(BaseTable)) && x.Namespace == assemblyName)
-                .ToDictionary(x => x, x =>
-                {
-                    var instance = Activator.CreateInstance(x);
-                    return (instance as BaseTable)!;
-                });
+            foreach (var table in assembly!.GetTypes()
+                    .Where(x => x.IsSubclassOf(typeof(BaseTable)) && x.Namespace == assemblyName))
+            {
+                var instance = Activator.CreateInstance(table) as BaseTable;
+                LoadedTableDict.Add(table, instance!);
+            }
         }
 
         public static void Add<T>(BaseTable baseTable) where T : class
         {
-            _loadedTableDict.Add(typeof(T), baseTable);
+            LoadedTableDict.Add(typeof(T), baseTable);
         }
         public static T From<T>() where T : BaseTable
         {
-            if (_loadedTableDict!.TryGetValue(typeof(T), out var value) == false)
+            if (LoadedTableDict!.TryGetValue(typeof(T), out var value) == false)
             {
                 throw new Exception($"Not Found Table. <Table:{typeof(T)}>");
             }
