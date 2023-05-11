@@ -15,10 +15,7 @@ namespace JsonTable
             get
 #pragma warning restore CS8766 // 반환 형식에서 참조 형식의 null 허용 여부가 암시적으로 구현된 멤버와 일치하지 않음(null 허용 여부 특성 때문일 수 있음)
             {
-                if (index > _values!.Count - 1)
-                    return null;
-
-                return _values[index];
+                return index > _values!.Count - 1 ? null : _values[index];
             }
         }
 
@@ -26,6 +23,7 @@ namespace JsonTable
 
         public List<T> Clone => new List<T>(_values);
 
+        // ReSharper disable once ConvertToAutoPropertyWithPrivateSetter
         public List<T> Container => _values;
 
 

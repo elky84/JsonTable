@@ -13,6 +13,7 @@ namespace JsonTable
 
         protected BaseTable()
         {
+            // ReSharper disable once VirtualMemberCallInConstructor
             Load();
         }
 

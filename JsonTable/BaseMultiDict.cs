@@ -9,44 +9,36 @@ namespace JsonTable
     public class BaseMultiDict<K, T> : BaseTable
         where T : class where K : notnull
     {
-        protected Dictionary<K, List<T>> _dictionary = new Dictionary<K, List<T>>();
+        protected Dictionary<K, List<T>> Dictionary = new Dictionary<K, List<T>>();
 
-        public Dictionary<K, List<T>> Clone => new Dictionary<K, List<T>>(_dictionary);
+        public Dictionary<K, List<T>> Clone => new Dictionary<K, List<T>>(Dictionary);
 
-        public Dictionary<K, List<T>> Container => _dictionary;
+        public Dictionary<K, List<T>> Container => Dictionary;
 
-        public void Add(K key, T value)
+        protected void Add(K key, T value)
         {
-            if (_dictionary.TryGetValue(key, out var list))
+            if (Dictionary.TryGetValue(key, out var list))
             {
                 list.Add(value);
             }
             else
             {
-                this._dictionary[key] = new List<T>
+                this.Dictionary[key] = new List<T>
                 {
                     value
                 };
             }
         }
 
-        public IEnumerable<K> Keys
-        {
-            get
-            {
-                return this._dictionary.Keys;
-            }
-        }
+        public IEnumerable<K> Keys => this.Dictionary.Keys;
 
         public List<T> this[K key]
         {
             get
             {
-                if (!this._dictionary.TryGetValue(key, out var list))
-                {
-                    list = new List<T>();
-                    this._dictionary[key] = list;
-                }
+                if (this.Dictionary.TryGetValue(key, out var list)) return list;
+                list = new List<T>();
+                this.Dictionary[key] = list;
                 return list;
             }
         }
@@ -61,7 +53,7 @@ namespace JsonTable
 
             var list = JsonConvert.DeserializeObject<List<T>>(json); if (list != null)
             {
-                _dictionary = OnLoad(list);
+                Dictionary = OnLoad(list);
             }
         }
 
@@ -83,7 +75,7 @@ namespace JsonTable
                 Add(key, t!);
             }
 
-            return _dictionary;
+            return Dictionary;
         }
     }
 }

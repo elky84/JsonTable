@@ -7,11 +7,11 @@ using System.Linq;
 
 namespace JsonTable
 {
-    public class BaseDict<K, T> : BaseTable, IReadOnlyDictionary<K, T> where T : class where K : notnull
+    public class BaseDict<TK, T> : BaseTable, IReadOnlyDictionary<TK, T> where T : class where TK : notnull
     {
-        private Dictionary<K, T> _dictionary = new Dictionary<K, T>();
+        private Dictionary<TK, T> _dictionary = new Dictionary<TK, T>();
 
-        public T? this[K key]
+        public T? this[TK key]
         {
 #pragma warning disable CS8766 // 반환 형식에서 참조 형식의 null 허용 여부가 암시적으로 구현된 멤버와 일치하지 않음(null 허용 여부 특성 때문일 수 있음)
             get
@@ -21,21 +21,22 @@ namespace JsonTable
             }
         }
 
-        public IEnumerable<K> Keys => _dictionary.Keys;
+        public IEnumerable<TK> Keys => _dictionary.Keys;
 
         public IEnumerable<T> Values => _dictionary.Values;
 
-        public Dictionary<K, T> Clone => new Dictionary<K, T>(_dictionary);
+        public Dictionary<TK, T> Clone => new Dictionary<TK, T>(_dictionary);
 
-        public Dictionary<K, T> Container => _dictionary;
+        // ReSharper disable once ConvertToAutoPropertyWithPrivateSetter
+        public Dictionary<TK, T> Container => _dictionary;
 
         public int Count => _dictionary.Count;
 
-        public bool ContainsKey(K key) => _dictionary.ContainsKey(key);
+        public bool ContainsKey(TK key) => _dictionary.ContainsKey(key);
 
-        public IEnumerator<KeyValuePair<K, T>> GetEnumerator() => _dictionary.GetEnumerator();
+        public IEnumerator<KeyValuePair<TK, T>> GetEnumerator() => _dictionary.GetEnumerator();
 
-        public bool TryGetValue(K key, out T value) => _dictionary.TryGetValue(key, out value!);
+        public bool TryGetValue(TK key, out T value) => _dictionary.TryGetValue(key, out value!);
 
         protected override void Load()
         {
@@ -52,7 +53,7 @@ namespace JsonTable
             }
         }
 
-        protected virtual Dictionary<K, T> OnLoad(List<T> list)
+        protected virtual Dictionary<TK, T> OnLoad(IEnumerable<T> list)
         {
             var property = typeof(T).GetProperties().FirstOrDefault(x => x.Name == Key);
             if (null == property)
@@ -60,7 +61,7 @@ namespace JsonTable
                 throw new Exception($"Not found keyProperty from T. <KeyProperty:{Key}, T:{typeof(T).Name}>");
             }
 
-            return list.ToDictionary(x => ((K)property.GetValue(x))!, x => x);
+            return list.ToDictionary(x => ((TK)property.GetValue(x))!, x => x);
         }
 
         IEnumerator IEnumerable.GetEnumerator() => _dictionary.GetEnumerator();

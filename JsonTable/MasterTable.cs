@@ -7,13 +7,13 @@ namespace JsonTable
 {
     public static class MasterTable
     {
-        private static Dictionary<Type, BaseTable> LoadedTableDict = new Dictionary<Type, BaseTable>();
+        private static readonly Dictionary<Type, BaseTable> LoadedTableDict = new Dictionary<Type, BaseTable>();
 
         static MasterTable()
         {
         }
 
-        public static Dictionary<K, V> Merge<K, V>(IEnumerable<Dictionary<K, V>> dictionaries)
+        public static Dictionary<TK, TV> Merge<TK, TV>(IEnumerable<Dictionary<TK, TV>> dictionaries)
         {
             return dictionaries.SelectMany(x => x)
                             .ToDictionary(x => x.Key, y => y.Value);

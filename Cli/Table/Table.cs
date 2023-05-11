@@ -1,6 +1,7 @@
 ﻿using Cli.MasterData;
 using Cli.Types;
 using JsonTable;
+// ReSharper disable All
 
 namespace Cli.Table
 {
@@ -46,7 +47,7 @@ namespace Cli.Table
                 }
             }
 
-            return _dictionary;
+            return Dictionary;
         }
     }
 }

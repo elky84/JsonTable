@@ -10,6 +10,7 @@ namespace JsonTable
 
         public string FullPath => $"{System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly()!.Location)}/{Path}";
 
+        // ReSharper disable once MemberInitializerValueIgnored
         public string Key { get; private set; } = "Id";
 
         public TableAttribute(string path, string key = "Id")
