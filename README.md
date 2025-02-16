@@ -75,6 +75,10 @@ MasterTable.From<TableItem>().FirstOrDefault(x => x.Id == id);
 
 ## Version History
 
+### v1.0.15
+
+BaseMultiDict supply Composite Key.
+
 ### v1.0.14
 
 Modified the Load function interface behavior to allow loading from multiple assemblies.
